@@ -1,0 +1,26 @@
+.tabItem {
+  background-color: #f6f6f6;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px gray solid;
+  border-radius: 5px;
+  margin: 2px 2px 0; 
+}
+
+.tabItem:hover {
+  background-color: #afafaf;
+}
+
+.tabItem:focus{
+  background-color: blue;
+  color: white;
+}
+
+.tabItemActive {
+  padding: 10px 20px;
+  border: 1px gray blue;
+  border-radius: 5px;
+  margin: 2px 2px 0; 
+  background-color: blue;
+  color: white;
+}

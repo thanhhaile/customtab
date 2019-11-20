@@ -1,0 +1,32 @@
+.menuTop {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuTop > div:first-child {
+  color: pink;
+}
+
+.menuRight {
+  display: flex;
+}
+
+.menuRight > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuBottom {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.menuLeft {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.menuLeft > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
