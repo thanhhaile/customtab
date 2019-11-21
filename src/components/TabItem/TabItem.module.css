@@ -18,9 +18,19 @@
 
 .tabItemActive {
   padding: 10px 20px;
-  border: 1px gray blue;
+  border: 1px solid blue;
   border-radius: 5px;
   margin: 2px 2px 0; 
   background-color: blue;
   color: white;
+}
+
+.disable {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 2px 2px 0; 
+  color: gray;
+  background-color: rgb(204, 203, 203);
+  border: 1px gray solid;
+  cursor: unset;
 }

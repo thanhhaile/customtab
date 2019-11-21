@@ -3,15 +3,16 @@
   flex-direction: column;
 }
 
-.menuTop > div:first-child {
+/* .menuTop > div:first-child {
   color: pink;
-}
+} */
 
 .menuRight {
   display: flex;
 }
 
 .menuRight > div:first-child {
+  width: 40%;
   display: flex;
   flex-direction: column;
 }
@@ -27,6 +28,7 @@
 }
 
 .menuLeft > div:first-child {
+  width: 40%;
   display: flex;
   flex-direction: column;
 }

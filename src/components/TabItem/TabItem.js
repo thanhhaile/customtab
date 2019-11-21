@@ -5,40 +5,26 @@ import style from "./TabItem.module.css";
 
 const TabItem = props => {
 
-  console.log(props);
+  const { active, disable, onClick, label } = props;
 
   return (
     <div
       className={classnames(
-        { [style.tabItem]: !props.active },
+        { [style.tabItem]: !active && !disable},
         {
-          [style.tabItemActive]: props.active
+          [style.tabItemActive]: active
+        }, 
+        {
+          [style.disable] : disable
         }
       )}
-      onClick={() => props.onClick(props.label)}
+      onClick={() => {
+        if(!disable) onClick(label);
+      }}
     >
-      <span>{props.label}</span>
+      <span>{label}</span>
     </div>
   );
 };
-
-// const TabItem = props => {
-
-//   console.log(props);
-
-//   return (
-//     <div
-//       className={classnames(
-//         { [props.customStyle.tabItem || style.tabItem]: !props.active },
-//         {
-//           [props.customStyle.tabItemActive || style.tabItemActive]: props.active
-//         }
-//       )}
-//       onClick={() => props.onClick(props.label)}
-//     >
-//       <span>{props.label}</span>
-//     </div>
-//   );
-// };
 
 export default TabItem;
